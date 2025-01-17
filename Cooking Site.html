@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепторія</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Рецепторія</h1>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Меню</button>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">× Закрити</button>
+        <a href="#" onclick="showRecipe('Завтрак')">Завтрак</a>
+        <a href="#" onclick="showRecipe('Сніданок')">Сніданок</a>
+        <a href="#" onclick="showRecipe('Супи')">Супи</a>
+    </div>
+
+    <div class="main" id="main">
+        <h2>Ласкаво просимо!</h2>
+        <p>Виберіть категорію рецептів з меню, щоб почати.</p>
+        <div id="recipeContent"></div>
+    </div>
+
+</body>
+</html>
